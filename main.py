@@ -1,5 +1,4 @@
 import csv
-import requests
 
 print('чтение списка кортежей')
 with open('in.csv', 'r', encoding='cp1251') as f: #utf-8
@@ -26,7 +25,4 @@ with open('in_with_col_name.csv', 'r') as f:
     csv_in_file = csv.DictReader(f, delimiter=';')
     for row in csv_in_file:
         print(row)
-
-        #Тестирование
-        #sfsdf
 
